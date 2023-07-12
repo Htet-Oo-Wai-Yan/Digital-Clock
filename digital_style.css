@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root{
+    --back-color: #000000;
+    --btn-color: #4E4FEB;
+    --special-color: #068FFF;
+    --text-color: #EEEEEE;
+    --clock_color: #393E46;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--back-color);
+    color: var(--text-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main-frame{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--btn-color);
+    background-color: var(--text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.menu-btn{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.main-frame > div{
+    margin: 10px;
+}
+
+.display{
+    position: relative;
+}
+
+.date-display,.clock-display{
+    width: 400px;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding: 15px;
+}
+
+.date-display{
+    background-color: var(--special-color);
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--back-color);
+}
+
+.clock-display{
+    background-color: var(--clock_color);
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.second-display{
+    background-color: var(--btn-color);
+    border-radius: 5px 0 0 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+
+    padding: 10px;
+
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+}
