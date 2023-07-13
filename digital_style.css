@@ -145,6 +145,39 @@ body{
     transition: all .5s;
 }
 
+.btn i{
+    position: relative;
+
+    
+    display: inline-block;
+}
+
+.btn i[data-title]::after{
+    content: attr(data-title);
+    background-color: var(--special-color);
+    color: var(--box-color);
+    border-radius: 3px;
+    font-size: 10px;
+
+    white-space: nowrap;
+
+    position: absolute;
+    bottom: -1rem;
+    left: 70%;
+
+    padding: 5px;
+    
+    opacity: 0;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.btn i[data-title]:hover::after{
+    transition: all .1s ease .3s;
+    opacity: 1;
+    visibility: visible;
+}
+
 .btn:hover{
     background-color: var(--box-color);
     color: var(--special-color);
