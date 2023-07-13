@@ -1,5 +1,4 @@
 
-
 const clockTik = setInterval( function time(){
     const date = new Date();
     let hour = date.getHours();
