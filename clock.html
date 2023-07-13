@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="./digital_style.css" />
 
+    <!-- font awsome cdn js link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     
@@ -14,31 +17,52 @@
     <div class="main-frame">
 
         <div class="menu">
-            <img src="./image/menu-icon.png" alt="menu-icon" class="menu-btn">
+            <i class="fa-solid fa-bars menu-btn"></i>
         </div>
 
-        <div class="date-display">
-            <div class="full-date">
-                <p></p>
-            </div>
-
-            <div class="day">
-                <p></p>
-            </div>
-        </div>
-
-       <div class="display">
+        
+        <div class="display">
+            
             <div class="clock-display">
-                <div class="hour"><p></p></div>
+                <div class="hour"><p>00</p></div>
                 <div class="divider"><p>:</p></div>
-                <div class="minute"><p></p></div>
+                <div class="minute"><p>00</p></div>
             </div>
 
-            <div class="second-display">
-                <div class="second">
-                    <p></p>
+            <div class="data-display">
+                
+                <div class="date-display">
+                    <div class="full-date">
+                        <p>12-07-2023</p>
+                    </div>
+        
+                    <div class="day">
+                        <p>Wednesday</p>
+                    </div>
                 </div>
+                
+                <div class="second-display">
+                    <div class="second">
+                        <p>00</p>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="function-btns">
+                  <div class="list btn">
+                    <i class="fa-solid fa-list-ul list iocn"></i>
+                  </div>
+
+                  <div class="pomodro btn">
+                    <i class="fa-solid fa-hourglass-end tomato icon"></i>
+                </div>
+
+                  <div class="stop-watch btn">
+                    <i class="fa-solid fa-stopwatch-20 stop-watch icon"></i>
+                  </div>
+            </div>
+
        </div>
 
     </div>
